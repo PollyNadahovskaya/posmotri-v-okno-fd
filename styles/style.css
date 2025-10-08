@@ -65,28 +65,6 @@ ol {
   gap: 16px;
 }
 
-.content__details {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  gap: 38px;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 .result__video-container {
   position: relative;
   width: 711px;
@@ -98,6 +76,12 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
 }
 
 .search-form__fieldset {
@@ -185,11 +169,17 @@ ol {
   width: 194px;
 }
 
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
 .title {
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94em;
   text-transform: uppercase;
 }
 
@@ -241,7 +231,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  max-width: 200px;
+  max-width: 196px;
   color: #fff;
 }
 
@@ -249,14 +239,22 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 1em;
   text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
   padding-top: 6px;
   font-weight: 400;
-  line-height: 90%;
+  font-size: 18px;
+  line-height: 16.2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
@@ -266,10 +264,6 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.more-button {
-  width: 100%;
 }
 
 .button {
@@ -298,4 +292,18 @@ ol {
 
 .button:active {
   background: #545050;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
