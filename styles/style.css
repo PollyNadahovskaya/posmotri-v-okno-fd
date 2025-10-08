@@ -236,25 +236,25 @@ ol {
 }
 
 .content__video-card-title {
+  overflow: hidden;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1em;
   text-transform: uppercase;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
   padding-top: 6px;
+  overflow: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
