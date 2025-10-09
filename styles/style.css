@@ -193,6 +193,7 @@ ol {
   overflow: auto;
   height: 298px;
   position: relative;
+  min-width: 395px;
 }
 
 .content__list {
@@ -243,6 +244,7 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   color: #fff;
+  max-width: calc(100% - 194px);
 }
 
 .content__video-card-title {
